@@ -1,0 +1,15 @@
+<div ng-controller="inputQueryController">
+  <div class="system-name">
+    <p class="display-4" align="center">{{title}}</p>
+  </div>
+
+  <div class="input-group">
+    <input ng-change="getResults()" ng-model='query' type="text" class="form-control" placeholder="Căutarea ta începe de aici ..." aria-label="Căutarea ta începe de aici ..." aria-describedby="basic-addon2">
+    <button type="submit" ng-click="getResults()" class="btn btn-success">Submit</button>
+  </div>
+
+  <p>{{results.data.content}}</p>
+</div>
+
+
+

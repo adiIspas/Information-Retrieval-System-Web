@@ -11,7 +11,7 @@ export class AppComponent {
   pageTitle = 'King Retrieval';
   submit = 'Caută';
   query: string;
-  results = {'content' : 'no-results'};
+  results: Object;
 
   constructor(private http: HttpClient) {}
 

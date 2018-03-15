@@ -16,6 +16,7 @@ p {
   min-width: 425px;
   width: 50%;
   margin: 5vh auto;
+  margin-bottom: 1vh
 }
 
 .one-result {
@@ -25,4 +26,9 @@ p {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px
+}
+
+.results-time {
+  width: 50%;
+  margin: auto;
 }

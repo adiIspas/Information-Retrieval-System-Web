@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material';
 import { MatListModule } from '@angular/material/list';
+import { MatChipsModule } from '@angular/material/chips';
 
 
 import { AppComponent } from './app.component';
@@ -18,7 +19,8 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     MatCardModule,
     MatListModule,
-    BrowserModule
+    BrowserModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

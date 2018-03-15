@@ -11,6 +11,8 @@
     </div>
   </div>
 
+  <p align="right" class="results-time" *ngIf='timeOfExecution>-1'>Un număr de {{ totalResults }} rezultate găsite în {{ timeOfExecution }} secunde</p>
+
   <div layout-fill layout="row" layout-align="center none">
     <div layout="row" layout-align="center none">
       <mat-list-item *ngFor="let result of results">

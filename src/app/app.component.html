@@ -1,18 +1,36 @@
-<main role="main" class="container">
-  <div ngDefaultControl="inputQueryController">
+<div ngDefaultControl="inputQueryController">
+  <div class="search-box">
     <div class="system-name">
       <p class="display-4" align="center"> {{ pageTitle }} </p>
     </div>
 
     <div class="input-group">
       <input (change)="getResults()" [(ngModel)]="query" type="text" class="form-control"
-             placeholder="Căutarea ta începe de aici ..." aria-label="Căutarea ta începe de aici ..." aria-describedby="basic-addon2">
+             placeholder="Căutarea ta începe aici ..." aria-label="Căutarea ta începe aici ..." aria-describedby="basic-addon2">
       <button type="submit" (click)='getResults()' class="btn btn-success"> {{ submit }}</button>
     </div>
-
-    <p>{{results.content}}</p>
   </div>
-</main>
+
+  <div class="results-list">
+    <mat-list>
+      <mat-list-item *ngFor="let result of results">
+
+        <mat-card class="one-result">
+          <mat-card-header>
+            <mat-card-title> {{ result.fileName }} </mat-card-title>
+            <mat-card-subtitle> {{ result.relativePath }} </mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            {{ result.contentExtracted }}
+          </mat-card-content>
+        </mat-card>
+
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+</div>
 
 
 

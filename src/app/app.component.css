@@ -1,3 +1,5 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 .system-name {
   margin: 5vh auto;
 }
@@ -9,4 +11,24 @@ p {
 .input-group {
   position: relative;
   margin: 2vh auto;
+  width: 60%;
+}
+
+.results-list {
+
+}
+
+.one-result {
+  position: relative;
+  margin: 2vh auto;
+  width: 60%;
+}
+
+mat-list-item {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.search-box {
+  min-width: 360px;
 }

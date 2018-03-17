@@ -14,6 +14,7 @@ export class AppComponent {
   query: string;
   timeOfExecution = -1;
   totalResults = 0;
+  apiBaseUrl = 'http://localhost:8080/api/';
 
   results = [];
 
@@ -21,7 +22,7 @@ export class AppComponent {
 
   getResults() {
     if (this.query !== null && this.query !== undefined && this.query.trim() !== '') {
-      this.http.get('http://localhost:8080/?query=' + this.query).subscribe(result => {
+      this.http.get(this.apiBaseUrl + 'search?query=' + this.query).subscribe(result => {
           this.results = result['results'];
           this.timeOfExecution = result['timeOfExecution'] / 1000;
           this.totalResults = result['totalResults'];

@@ -5,7 +5,7 @@
     </div>
 
     <div class="input-group">
-      <input (change)="getResults()" [(ngModel)]="query" type="text" class="form-control"
+      <input autofocus (change)="getResults()" [(ngModel)]="query" type="text" class="form-control"
              placeholder="Căutarea ta începe aici ..." aria-label="Căutarea ta începe aici ..." aria-describedby="basic-addon2">
       <button type="submit" (click)='getResults()' class="btn btn-success"> {{ submit }}</button>
     </div>

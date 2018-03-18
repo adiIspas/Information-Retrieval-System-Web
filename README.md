@@ -7,6 +7,8 @@ Will be added ...
 ## Short description
 A web interface that can be used with Information retrieval system for Romanian language from [here](https://github.com/adiIspas/Information-Retrieval-System).
 
+![Screen capture at version 1.2.1](img/screencapture-v1.2.1.png)
+
 ## Instruction to use
 
 ### Requirements

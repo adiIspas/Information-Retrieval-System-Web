@@ -22,9 +22,7 @@
               <mat-card-subtitle> {{ result.relativePath }} </mat-card-subtitle>
             </mat-card-header>
 
-            <mat-card-content>
-              {{ result.contentExtracted }}
-            </mat-card-content>
+            <mat-card-content [innerHtml]="result.contentExtracted"></mat-card-content>
           </mat-card>
       </mat-list-item>
     </div>

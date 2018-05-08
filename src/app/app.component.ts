@@ -25,7 +25,7 @@ export class AppComponent {
       this.http.get(this.apiBaseUrl + 'search?query=' + this.query).subscribe(result => {
           this.results = result['results'];
           this.timeOfExecution = result['timeOfExecution'] / 1000;
-          this.totalResults = result['totalResults'];
+          this.totalResults = result['totalResults'] !== null ? result['totalResults'] : 0;
       });
     }
   }

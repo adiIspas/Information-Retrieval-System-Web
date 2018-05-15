@@ -18,7 +18,7 @@
       <mat-list-item *ngFor="let result of results">
           <mat-card class="one-result">
             <mat-card-header>
-              <mat-card-title> {{ result.fileName }} </mat-card-title>
+              <mat-card-title> {{ result.fileName }}  ({{ result.score }}) </mat-card-title>
               <mat-card-subtitle> {{ result.relativePath }} </mat-card-subtitle>
             </mat-card-header>
 
